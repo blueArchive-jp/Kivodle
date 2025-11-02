@@ -67,6 +67,8 @@ function pageLoad() {
 
                 if (uniqueNameHiragana === term) return 2;
                 if (editionNameHiragana === term) return 2;
+                if (item.uniqueName.includes(search)) return 1;
+                if (item.editionName.includes(search)) return 1;
                 if (uniqueNameHiragana.includes(term)) return 1;
                 if (editionNameHiragana.includes(term)) return 1;
                 return 0;
