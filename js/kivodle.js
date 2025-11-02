@@ -65,6 +65,7 @@ function pageLoad() {
                 const editionNameHiragana = convertToHiragana(item.editionName);
                 const term = convertToHiragana(search);
 
+                if (item.text === search) return 3; 
                 if (uniqueNameHiragana === term) return 2;
                 if (editionNameHiragana === term) return 2;
                 if (item.uniqueName.includes(search)) return 1;
