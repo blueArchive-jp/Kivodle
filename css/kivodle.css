@@ -92,6 +92,10 @@ body {
     max-width: 452px;
 }
 
+#playArea {
+    visibility: hidden;
+}
+
 #infoArea {
     text-align: center;
     border-radius: 3px;
