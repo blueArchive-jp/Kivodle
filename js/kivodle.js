@@ -87,6 +87,7 @@ async function pageLoad() {
     currentMode = modes.daily;
 
     setup();
+    $("#playArea").css('visibility', 'visible');
 
     // サイトを初めて訪れる場合、説明用のモーダルを表示
     if (!getLocalStorage(keyGeneralVisited)) {
