@@ -21,6 +21,7 @@ const keyGeneralVisited = 'Kivodle.General.Visited';
 const keyDataLatest = 'Kivodle.Data.Latest';
 const keyDataStudents = 'Kivodle.Data.Students';
 const keyDailyLastPlayed = 'Kivodle.Daily.LastPlayed';
+const keyDailyTarget = 'Kivodle.Daily.Target';
 const keyDailyGuesses = 'Kivodle.Daily.Guesses';
 const keyDailyWinStreak = 'Kivodle.Daily.WinStreak';
 const keyEndlessTarget = 'Kivodle.Endless.Target';
@@ -166,19 +167,26 @@ function setupDom() {
 
 // デイリーモードセットアップ時の処理
 function setupDailyMode() {
-    // デイリーモードの正解の設定
-    setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
-
     // 今日分のセーブデータの有無によって分岐
     const todayStr = `${now.getUTCFullYear()}/${now.getUTCMonth() + 1}/${now.getUTCDate()}`
+    const lastTarget = getLocalStorage(keyDailyTarget);
     const lastPlayed = getLocalStorage(keyDailyLastPlayed);
     if (lastPlayed !== null && guessDate(todayStr, lastPlayed) === same) {
         // セーブデータがある場合それに沿ってゲームを再現する
+        if (lastTarget !== null) {
+            target = implementedStudents.find((elm) => elm.studentName === lastTarget.studentName);
+        } else {
+            setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
+            setLocalStorage(keyDailyTarget, target);
+        }
         guesses = getLocalStorage(keyDailyGuesses) || [];
         answerForLoad();
     } else {
         // セーブデータがないか、当日のもの以外
+        setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
+        removeLocalStorage(keyDailyTarget);
         removeLocalStorage(keyDailyGuesses);
+        setLocalStorage(keyDailyTarget, target);
         setLocalStorage(keyDailyLastPlayed, todayStr);
     }
 
