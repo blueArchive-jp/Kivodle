@@ -18,7 +18,10 @@ const regulations = Object.freeze([
 ]);
 
 const keyGeneralVisited = 'Kivodle.General.Visited';
+const keyDataLatest = 'Kivodle.Data.Latest';
+const keyDataStudents = 'Kivodle.Data.Students';
 const keyDailyLastPlayed = 'Kivodle.Daily.LastPlayed';
+const keyDailyTarget = 'Kivodle.Daily.Target';
 const keyDailyGuesses = 'Kivodle.Daily.Guesses';
 const keyDailyWinStreak = 'Kivodle.Daily.WinStreak';
 const keyEndlessTarget = 'Kivodle.Endless.Target';
@@ -43,7 +46,10 @@ const judges = [];
 const now = getToday();
 
 // ページロード時に1回だけ実行する
-function pageLoad() {
+async function pageLoad() {
+    // 生徒リストの取得
+    await loadStudentsAsync();
+
     // 実装されて1日経っていない生徒を除外する処理
     const yesterdayStr = `${String(now.getUTCFullYear())}/${String(now.getUTCMonth() + 1)}/${String(now.getUTCDate() - 1)}`;
     implementedStudents = students.filter(student => {
@@ -65,8 +71,11 @@ function pageLoad() {
                 const editionNameHiragana = convertToHiragana(item.editionName);
                 const term = convertToHiragana(search);
 
+                if (item.text === search) return 3; 
                 if (uniqueNameHiragana === term) return 2;
                 if (editionNameHiragana === term) return 2;
+                if (item.uniqueName.includes(search)) return 1;
+                if (item.editionName.includes(search)) return 1;
                 if (uniqueNameHiragana.includes(term)) return 1;
                 if (editionNameHiragana.includes(term)) return 1;
                 return 0;
@@ -82,6 +91,7 @@ function pageLoad() {
     currentMode = modes.daily;
 
     setup();
+    $("#playArea").css('visibility', 'visible');
 
     // サイトを初めて訪れる場合、説明用のモーダルを表示
     if (!getLocalStorage(keyGeneralVisited)) {
@@ -157,19 +167,26 @@ function setupDom() {
 
 // デイリーモードセットアップ時の処理
 function setupDailyMode() {
-    // デイリーモードの正解の設定
-    setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
-
     // 今日分のセーブデータの有無によって分岐
     const todayStr = `${now.getUTCFullYear()}/${now.getUTCMonth() + 1}/${now.getUTCDate()}`
+    const lastTarget = getLocalStorage(keyDailyTarget);
     const lastPlayed = getLocalStorage(keyDailyLastPlayed);
     if (lastPlayed !== null && guessDate(todayStr, lastPlayed) === same) {
         // セーブデータがある場合それに沿ってゲームを再現する
+        if (lastTarget !== null) {
+            target = implementedStudents.find((elm) => elm.studentName === lastTarget.studentName);
+        } else {
+            setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
+            setLocalStorage(keyDailyTarget, target);
+        }
         guesses = getLocalStorage(keyDailyGuesses) || [];
         answerForLoad();
     } else {
         // セーブデータがないか、当日のもの以外
+        setTarget(now.getUTCFullYear() * 10000 + now.getUTCMonth() * 100 + now.getUTCDate());
+        removeLocalStorage(keyDailyTarget);
         removeLocalStorage(keyDailyGuesses);
+        setLocalStorage(keyDailyTarget, target);
         setLocalStorage(keyDailyLastPlayed, todayStr);
     }
 
