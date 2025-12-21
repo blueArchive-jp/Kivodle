@@ -2,8 +2,16 @@
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).<br>
-The first part of the version number follows [Semantic Versioning](http://semver.org/).<br>
-The latter part of the version number indicates the latest implementation date among the students at that time.
+The version number follows [Semantic Versioning](http://semver.org/).
+
+## [1.5.1]
+### Changed
+- 生徒データをCloudflare R2に外出し
+- 生徒名検索時のアルゴリズムを調整
+  - 漢字・カタカナの部分一致で候補として出力されるように修正
+  - 記号を含む完全一致時に候補として出力されるように修正
+### Fixed
+- データを後から追加した際にデイリーモードの正解が変化しないように修正
 
 ## [1.5.0-20251008]
 ### Added
