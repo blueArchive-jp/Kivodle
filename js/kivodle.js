@@ -254,7 +254,7 @@ function setupSpeedrunMode() {
         setWinStreakAreaForSpeedrun();
     });
 
-    insertSingleButton('startButton', 'スタート', function () { startSpeedrun(false) })
+    insertSingleButton('startButton', '시작', function () { startSpeedrun(false) })
     setWinStreakAreaForSpeedrun();
 }
 
@@ -641,8 +641,8 @@ function extractUniqueName(src) {
 }
 
 function extractEditionName(src) {
-    const startIndex = src.indexOf('（');
-    const endIndex = src.indexOf('）');
+    const startIndex = src.indexOf('(');
+    const endIndex = src.indexOf(')');
     if (startIndex === -1) {
         return '';
     }
@@ -650,6 +650,8 @@ function extractEditionName(src) {
 }
 
 function convertToHiragana(src) {
+
+    return src;
     const replaceDic = {
         '＊': '',
         '正月': 'しょうがつ',
