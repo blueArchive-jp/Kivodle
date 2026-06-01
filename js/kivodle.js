@@ -73,11 +73,11 @@ async function pageLoad() {
                 // 1순위: 이름이 완전히 똑같을 때
                 if (itemName === term) return 3;
                 // 2순위: 별명 중에 완전히 똑같은 게 있을 때 ("수나코" 입력 시)
-                if (item.aliases.includes(term)) return 2;
+                if (item.aliases.includes(term)) return 3;
                 // 3순위: 이름의 일부만 입력했을 때 ("하나코" 입력 시 "하나코(수영복)" 검색)
                 if (itemName.includes(term)) return 1;
                 // 4순위: 별명의 일부만 입력했을 때
-                if (item.aliases.some(alias => alias.includes(term))) return 1;
+                if (item.aliases.some(alias => alias.includes(term))) return 4;
                 return 0;
             }
         }
