@@ -63,21 +63,20 @@ async function pageLoad() {
         maxOptions: implementedStudents.length,
         valueField: 'value',
         labelField: 'text',
-        searchField: ['text', 'uniqueName', 'editionName'],
+        searchField: ['text', 'aliases'],
         sortField: null,
         score: function (search) {
             return function (item) {
-                const uniqueNameHiragana = convertToHiragana(item.uniqueName);
-                const editionNameHiragana = convertToHiragana(item.editionName);
-                const term = convertToHiragana(search);
-
-                if (item.text === search) return 3; 
-                if (uniqueNameHiragana === term) return 2;
-                if (editionNameHiragana === term) return 2;
-                if (item.uniqueName.includes(search)) return 1;
-                if (item.editionName.includes(search)) return 1;
-                if (uniqueNameHiragana.includes(term)) return 1;
-                if (editionNameHiragana.includes(term)) return 1;
+                const term = search.toLowerCase(); // 검색어를 소문자로 (영어 검색 대비)
+                const itemName = item.text.toLowerCase();
+                // 1순위: 이름이 완전히 똑같을 때
+                if (itemName === term) return 3;
+                // 2순위: 별명 중에 완전히 똑같은 게 있을 때 ("수나코" 입력 시)
+                if (item.aliases.includes(term)) return 2;
+                // 3순위: 이름의 일부만 입력했을 때 ("하나코" 입력 시 "하나코(수영복)" 검색)
+                if (itemName.includes(term)) return 1;
+                // 4순위: 별명의 일부만 입력했을 때
+                if (item.aliases.some(alias => alias.includes(term))) return 1;
                 return 0;
             }
         }
@@ -108,8 +107,8 @@ function setStudentusToSelect(studentsList) {
         options.push({
             value: element.studentName,
             text: element.studentName,
-            uniqueName: extractUniqueName(element.studentName),
-            editionName: extractEditionName(element.studentName),
+            // JSON 데이터에 추가한 aliases를 불러옵니다. 없으면 빈 배열.
+            aliases: element.data.aliases || []
         });
     });
 
@@ -630,57 +629,6 @@ function openModal() {
 function closeModal() {
     $('#modalOverlay').removeClass('open');
     $('#modal').removeClass('open');
-}
-
-function extractUniqueName(src) {
-    const index = src.indexOf('（');
-    if (index === -1) {
-        return src;
-    }
-    return src.substring(0, index);
-}
-
-function extractEditionName(src) {
-    const startIndex = src.indexOf('(');
-    const endIndex = src.indexOf(')');
-    if (startIndex === -1) {
-        return '';
-    }
-    return src.substring(startIndex + 1, endIndex);
-}
-
-function convertToHiragana(src) {
-
-    return src;
-    const replaceDic = {
-        '＊': '',
-        '正月': 'しょうがつ',
-        '水着': 'みずぎ',
-        '私服': 'しふく',
-        '温泉': 'おんせん',
-        '幼女': 'ようじょ',
-        '体操服': 'たいそうふく',
-        '応援団': 'おうえんだん',
-        '臨戦': 'りんせん',
-        '制服': 'せいふく',
-        '御坂美琴': 'みさかみこと',
-        '佐天涙子': 'さてんるいこ',
-        '食蜂操祈': 'しょくほうみさき',
-        '初音': 'はつね',
-    };
-
-    let ret = src.replace(/[\u30a1-\u30f6]/g, function (match) {
-        var chr = match.charCodeAt(0) - 0x60;
-        return String.fromCharCode(chr);
-    });
-
-    for (let key in replaceDic) {
-        if (src.includes(key)) {
-            ret = ret.replace(key, replaceDic[key]);
-        }
-    }
-
-    return ret;
 }
 
 // 今日の日付を取得する
