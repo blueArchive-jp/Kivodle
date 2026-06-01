@@ -1,0 +1,2885 @@
+[
+  {
+    "name": "에이미",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "코토리",
+    "weapon": "MG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "세리카",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "치세",
+    "weapon": "GL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "츠바키",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "ㅐ츠루기",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "노노미",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "하스미",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "하나에",
+    "weapon": "AR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "하루카",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "하루나",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "하레",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "히비키",
+    "weapon": "MT",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "히후미",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "피나",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "후우카",
+    "weapon": "SMG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "마키",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "무츠키",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "유우카",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "요시미",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "네루",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "사야",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "산해경",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "세리나",
+    "weapon": "AR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "슌",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "산해경",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "스미레",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "스즈미",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "시로코",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "시미코",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아루",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아스나",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아야네",
+    "weapon": "HG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "아비도스",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아이리",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아카네",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "아카리",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "우타하",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "이오리",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "이즈미",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "준코",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "주리",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "치나츠",
+    "weapon": "HG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "카린",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "카요코",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "코타마",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "호시노",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "아비도스",
+    "attackType": "관통",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "히나",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/02/04",
+    "aliases": []
+  },
+  {
+    "name": "마시로",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/02/11",
+    "aliases": []
+  },
+  {
+    "name": "시즈코",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2021/02/25",
+    "aliases": []
+  },
+  {
+    "name": "이즈나",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2021/02/25",
+    "aliases": []
+  },
+  {
+    "name": "아리스",
+    "weapon": "RG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2021/03/25",
+    "aliases": []
+  },
+  {
+    "name": "미도리",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/04/08",
+    "aliases": []
+  },
+  {
+    "name": "모모이",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/04/08",
+    "aliases": []
+  },
+  {
+    "name": "체리노",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2021/04/29",
+    "aliases": []
+  },
+  {
+    "name": "노도카",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2021/04/29",
+    "aliases": []
+  },
+  {
+    "name": "유즈",
+    "weapon": "GL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2021/05/13",
+    "aliases": []
+  },
+  {
+    "name": "하나코",
+    "weapon": "AR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/05/27",
+    "aliases": []
+  },
+  {
+    "name": "아즈사",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/05/27",
+    "aliases": []
+  },
+  {
+    "name": "코하루",
+    "weapon": "SR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2021/06/10",
+    "aliases": []
+  },
+  {
+    "name": "츠루기(수영복)",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/06/30",
+    "aliases": ["수루기"]
+  },
+  {
+    "name": "마시로(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/06/30",
+    "aliases": ["수시로"]
+  },
+  {
+    "name": "아즈사(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/06/30",
+    "aliases": ["수즈사"]
+  },
+  {
+    "name": "히후미(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2021/07/15",
+    "aliases": ["수후미"]
+  },
+  {
+    "name": "이오리(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/07/29",
+    "aliases": ["수오리"]
+  },
+  {
+    "name": "이즈미(수영복)",
+    "weapon": "MG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/07/29",
+    "aliases": ["수즈미"]
+  },
+  {
+    "name": "히나(수영복)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2021/07/29",
+    "aliases": ["수히나"]
+  },
+  {
+    "name": "시로코(라이딩)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "신비",
+    "implDate": "2021/08/12",
+    "aliases": ["라로코"]
+  },
+  {
+    "name": "슌(어린이)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "산해경",
+    "attackType": "폭발",
+    "implDate": "2021/08/26",
+    "aliases": ["응애슌"]
+  },
+  {
+    "name": "키리노",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "발키리",
+    "attackType": "폭발",
+    "implDate": "2021/08/26",
+    "aliases": []
+  },
+  {
+    "name": "사야(사복)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "산해경",
+    "attackType": "관통",
+    "implDate": "2021/09/09",
+    "aliases": ["사사야"]
+  },
+  {
+    "name": "네루(바니걸)",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2021/09/29",
+    "aliases": ["바네루"]
+  },
+  {
+    "name": "카린(바니걸)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2021/09/29",
+    "aliases": ["바카린"]
+  },
+  {
+    "name": "아스나(바니걸)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2021/10/12",
+    "aliases": ["바스나"]
+  },
+  {
+    "name": "나츠",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/10/27",
+    "aliases": []
+  },
+  {
+    "name": "마리",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2021/10/27",
+    "aliases": []
+  },
+  {
+    "name": "하츠네미쿠",
+    "weapon": "GL",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "기타",
+    "attackType": "폭발",
+    "implDate": "2021/11/03",
+    "aliases": ["미쿠"]
+  },
+  {
+    "name": "아코",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2021/11/17",
+    "aliases": []
+  },
+  {
+    "name": "체리노(온천)",
+    "weapon": "HG",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2021/11/30",
+    "aliases": ["온리노"]
+  },
+  {
+    "name": "토모에",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2021/11/30",
+    "aliases": []
+  },
+  {
+    "name": "치나츠(온천)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2021/11/30",
+    "aliases": []
+  },
+  {
+    "name": "노도카(온천)",
+    "weapon": "SMG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2021/12/15",
+    "aliases": ["온도카"]
+  },
+  {
+    "name": "무츠키(새해)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2021/12/29",
+    "aliases": ["새츠키","뉴츠키","정츠키"]
+  },
+  {
+    "name": "아루(새해)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2021/12/29",
+    "aliases": ["정아루","새아루","뉴아루"]
+  },
+  {
+    "name": "세리카(새해)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "아비도스",
+    "attackType": "관통",
+    "implDate": "2022/01/12",
+    "aliases": ["뉴리카","정리카","새리카"]
+  },
+  {
+    "name": "후부키",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "발키리",
+    "attackType": "관통",
+    "implDate": "2022/01/26",
+    "aliases": []
+  },
+  {
+    "name": "와카모",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/01/26",
+    "aliases": []
+  },
+  {
+    "name": "치히로",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2022/01/30",
+    "aliases": []
+  },
+  {
+    "name": "세나",
+    "weapon": "GL",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2022/01/30",
+    "aliases": []
+  },
+  {
+    "name": "미모리",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/02/09",
+    "aliases": []
+  },
+  {
+    "name": "히나타",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2022/02/23",
+    "aliases": []
+  },
+  {
+    "name": "우이",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2022/02/23",
+    "aliases": []
+  },
+  {
+    "name": "마리나",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2022/03/09",
+    "aliases": []
+  },
+  {
+    "name": "미야코",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "SRT",
+    "attackType": "관통",
+    "implDate": "2022/03/23",
+    "aliases": []
+  },
+  {
+    "name": "사키",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "SRT",
+    "attackType": "관통",
+    "implDate": "2022/03/23",
+    "aliases": []
+  },
+  {
+    "name": "미유",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "SRT",
+    "attackType": "관통",
+    "implDate": "2022/04/06",
+    "aliases": []
+  },
+  {
+    "name": "미치루",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/04/27",
+    "aliases": []
+  },
+  {
+    "name": "이로하",
+    "weapon": "HG",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2022/04/27",
+    "aliases": []
+  },
+  {
+    "name": "카에데",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "폭발",
+    "implDate": "2022/04/27",
+    "aliases": []
+  },
+  {
+    "name": "츠쿠요",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/05/11",
+    "aliases": []
+  },
+  {
+    "name": "히요리",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "아리우스",
+    "attackType": "폭발",
+    "implDate": "2022/05/24",
+    "aliases": []
+  },
+  {
+    "name": "미사키",
+    "weapon": "RL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "폭발",
+    "implDate": "2022/05/24",
+    "aliases": []
+  },
+  {
+    "name": "아츠코",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "아리우스",
+    "attackType": "폭발",
+    "implDate": "2022/06/08",
+    "aliases": []
+  },
+  {
+    "name": "노노미(수영복)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "폭발",
+    "implDate": "2022/06/22",
+    "aliases": ["수노미"]
+  },
+  {
+    "name": "와카모(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2022/06/22",
+    "aliases": ["수카모"]
+  },
+  {
+    "name": "아야네(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "아비도스",
+    "attackType": "관통",
+    "implDate": "2022/06/22",
+    "aliases": ["수야네"]
+  },
+  {
+    "name": "시즈코(수영복)",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/07/20",
+    "aliases": ["수즈코"]
+  },
+  {
+    "name": "호시노(수영복)",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "아비도스",
+    "attackType": "폭발",
+    "implDate": "2022/07/20",
+    "aliases": ["수시노"]
+  },
+  {
+    "name": "치세(수영복)",
+    "weapon": "GL",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/07/25",
+    "aliases": ["수치세"]
+  },
+  {
+    "name": "이즈나(수영복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2022/07/25",
+    "aliases": ["수즈나"]
+  },
+  {
+    "name": "사오리",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "폭발",
+    "implDate": "2022/08/09",
+    "aliases": []
+  },
+  {
+    "name": "모에",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "SRT",
+    "attackType": "관통",
+    "implDate": "2022/08/24",
+    "aliases": []
+  },
+  {
+    "name": "카즈사",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2022/08/24",
+    "aliases": []
+  },
+  {
+    "name": "코코나",
+    "weapon": "AR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "산해경",
+    "attackType": "관통",
+    "implDate": "2022/09/21",
+    "aliases": []
+  },
+  {
+    "name": "히비키(응원단)",
+    "weapon": "MT",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2022/09/28",
+    "aliases": ["응비키"]
+  },
+  {
+    "name": "노아",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2022/09/28",
+    "aliases": []
+  },
+  {
+    "name": "우타하(응원단)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2022/09/28",
+    "aliases": ["응타하"]
+  },
+  {
+    "name": "아카네(바니걸)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2022/10/12",
+    "aliases": ["바카네"]
+  },
+  {
+    "name": "하스미(체육복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2022/10/26",
+    "aliases": ["체스미","운스미"]
+  },
+  {
+    "name": "마리(체육복)",
+    "weapon": "HG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2022/10/26",
+    "aliases": ["체마리","운마리"]
+  },
+  {
+    "name": "유우카(체육복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2022/10/26",
+    "aliases": ["체유카","운유카"]
+  },
+  {
+    "name": "히마리",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2022/11/16",
+    "aliases": []
+  },
+  {
+    "name": "시구레",
+    "weapon": "GL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2022/11/30",
+    "aliases": []
+  },
+  {
+    "name": "하나에(크리스마스)",
+    "weapon": "AR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2022/12/14",
+    "aliases": ["클나에"]
+  },
+  {
+    "name": "세리나(크리스마스)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2022/12/14",
+    "aliases": ["클리나"]
+  },
+  {
+    "name": "하루나(새해)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2022/12/28",
+    "aliases": ["새루나","정루나","뉴루나"]
+  },
+  {
+    "name": "후우카(새해)",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2022/12/28",
+    "aliases": ["정우카","새후카","정후카"]
+  },
+  {
+    "name": "준코(새해)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2022/12/28",
+    "aliases": ["정준코","새준코","뉴준코"]
+  },
+  {
+    "name": "미네",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2023/01/11",
+    "aliases": []
+  },
+  {
+    "name": "미카",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2023/01/24",
+    "aliases": []
+  },
+  {
+    "name": "메구",
+    "weapon": "FT",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2023/01/31",
+    "aliases": []
+  },
+  {
+    "name": "칸나",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "발키리",
+    "attackType": "관통",
+    "implDate": "2023/01/31",
+    "aliases": []
+  },
+  {
+    "name": "사쿠라코",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2023/02/10",
+    "aliases": []
+  },
+  {
+    "name": "나기사",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2023/02/22",
+    "aliases": []
+  },
+  {
+    "name": "토키",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2023/02/22",
+    "aliases": []
+  },
+  {
+    "name": "코유키",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2023/03/08",
+    "aliases": []
+  },
+  {
+    "name": "하루카(새해)",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2023/03/22",
+    "aliases": ["새루카","정루카","뉴루카"]
+  },
+  {
+    "name": "카요코(새해)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2023/03/22",
+    "aliases": ["새요코","뉴요코","정요코"]
+  },
+  {
+    "name": "카호",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2023/04/12",
+    "aliases": []
+  },
+  {
+    "name": "유즈(메이드)",
+    "weapon": "GL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2023/04/26",
+    "aliases": ["메유즈"]
+  },
+  {
+    "name": "아리스(메이드)",
+    "weapon": "RG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2023/04/26",
+    "aliases": ["메리스"]
+  },
+  {
+    "name": "토키(바니걸)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2023/04/26",
+    "aliases": ["바토키"]
+  },
+  {
+    "name": "레이사",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2023/05/10",
+    "aliases": []
+  },
+  {
+    "name": "미나",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "산해경",
+    "attackType": "폭발",
+    "implDate": "2023/05/24",
+    "aliases": []
+  },
+  {
+    "name": "루미",
+    "weapon": "SMG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "산해경",
+    "attackType": "폭발",
+    "implDate": "2023/05/24",
+    "aliases": []
+  },
+  {
+    "name": "미노리",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2023/06/07",
+    "aliases": []
+  },
+  {
+    "name": "미야코(수영복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2023/06/21",
+    "aliases": ["수야코"]
+  },
+  {
+    "name": "미유(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2023/06/21",
+    "aliases": ["수미유"]
+  },
+  {
+    "name": "사키(수영복)",
+    "weapon": "MG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2023/06/21",
+    "aliases": ["수사키"]
+  },
+  {
+    "name": "시로코(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "신비",
+    "implDate": "2023/07/17",
+    "aliases": ["수로코"]
+  },
+  {
+    "name": "히나타(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2023/07/24",
+    "aliases": ["수나타"]
+  },
+  {
+    "name": "우이(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2023/07/24",
+    "aliases": ["수우이"]
+  },
+  {
+    "name": "코하루(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "신비",
+    "implDate": "2023/07/24",
+    "aliases": ["수하루"]
+  },
+  {
+    "name": "하나코(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2023/08/02",
+    "aliases": ["수나코"]
+  },
+  {
+    "name": "미모리(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2023/08/16",
+    "aliases": ["수모리"]
+  },
+  {
+    "name": "메루",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2023/08/23",
+    "aliases": []
+  },
+  {
+    "name": "모미지",
+    "weapon": "RL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "진동",
+    "implDate": "2023/08/23",
+    "aliases": []
+  },
+  {
+    "name": "코토리(응원단)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2023/09/06",
+    "aliases": ["응토리"]
+  },
+  {
+    "name": "하루나(체육복)",
+    "weapon": "SR",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2023/09/15",
+    "aliases": ["체루나"]
+  },
+  {
+    "name": "이치카",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2023/09/27",
+    "aliases": []
+  },
+  {
+    "name": "카스미",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2023/09/27",
+    "aliases": []
+  },
+  {
+    "name": "시구레(온천)",
+    "weapon": "GL",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2023/10/11",
+    "aliases": ["온구레"]
+  },
+  {
+    "name": "사텐루이코",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "기타",
+    "attackType": "관통",
+    "implDate": "2023/10/24",
+    "aliases": []
+  },
+  {
+    "name": "미사카미코토",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "기타",
+    "attackType": "관통",
+    "implDate": "2023/10/24",
+    "aliases": []
+  },
+  {
+    "name": "쇼쿠호미사키",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "기타",
+    "attackType": "폭발",
+    "implDate": "2023/10/24",
+    "aliases": []
+  },
+  {
+    "name": "유카리",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2023/11/08",
+    "aliases": []
+  },
+  {
+    "name": "렌게",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2023/11/22",
+    "aliases": []
+  },
+  {
+    "name": "키쿄",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2023/11/22",
+    "aliases": []
+  },
+  {
+    "name": "에이미(수영복)",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2023/12/06",
+    "aliases": ["수이미"]
+  },
+  {
+    "name": "하레(캠핑)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2023/12/27",
+    "aliases": ["캠하레"]
+  },
+  {
+    "name": "코타마(캠핑)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2023/12/27",
+    "aliases": ["캠타마"]
+  },
+  {
+    "name": "마코토",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2024/01/24",
+    "aliases": []
+  },
+  {
+    "name": "아코(드레스)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2024/01/24",
+    "aliases": ["드아코"]
+  },
+  {
+    "name": "이부키",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2024/01/24",
+    "aliases": []
+  },
+  {
+    "name": "히나(드레스)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2024/01/31",
+    "aliases": ["드히나"]
+  },
+  {
+    "name": "아루(드레스)",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2024/02/21",
+    "aliases": ["드아루"]
+  },
+  {
+    "name": "카요코(드레스)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "관통",
+    "implDate": "2024/02/21",
+    "aliases": ["드요코"]
+  },
+  {
+    "name": "아카리(새해)",
+    "weapon": "AR",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2024/03/06",
+    "aliases": ["새카리","정카리","뉴카리"]
+  },
+  {
+    "name": "우미카",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "신비",
+    "implDate": "2024/03/27",
+    "aliases": []
+  },
+  {
+    "name": "츠바키(가이드)",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2024/03/27",
+    "aliases": ["가바키"]
+  },
+  {
+    "name": "요시미(밴드)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/04/24",
+    "aliases": ["밴시미"]
+  },
+  {
+    "name": "아이리(밴드)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/04/24",
+    "aliases": ["밴이리"]
+  },
+  {
+    "name": "카즈사(밴드)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/04/24",
+    "aliases": ["밴즈사"]
+  },
+  {
+    "name": "키라라",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2024/05/08",
+    "aliases": []
+  },
+  {
+    "name": "미도리(메이드)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "진동",
+    "implDate": "2024/05/22",
+    "aliases": ["메도리"]
+  },
+  {
+    "name": "모모이(메이드)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "진동",
+    "implDate": "2024/05/22",
+    "aliases": ["메모이"]
+  },
+  {
+    "name": "세리카(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "신비",
+    "implDate": "2024/06/05",
+    "aliases": ["수리카"]
+  },
+  {
+    "name": "후부키(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "발키리",
+    "attackType": "폭발",
+    "implDate": "2024/06/26",
+    "aliases": ["수부키"]
+  },
+  {
+    "name": "칸나(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "발키리",
+    "attackType": "폭발",
+    "implDate": "2024/06/26",
+    "aliases": ["수칸나"]
+  },
+  {
+    "name": "키리노(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "발키리",
+    "attackType": "신비",
+    "implDate": "2024/06/26",
+    "aliases": ["수리노"]
+  },
+  {
+    "name": "모에(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "SRT",
+    "attackType": "진동",
+    "implDate": "2024/07/10",
+    "aliases": ["수모에"]
+  },
+  {
+    "name": "시로코＊테러",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "신비",
+    "implDate": "2024/07/22",
+    "aliases": ["쿠로코"]
+  },
+  {
+    "name": "아츠코(수영복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "아리우스",
+    "attackType": "진동",
+    "implDate": "2024/07/22",
+    "aliases": ["수츠코"]
+  },
+  {
+    "name": "호시노(무장)",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커",
+      "딜러"
+    ],
+    "school": "아비도스",
+    "attackType": "신비",
+    "implDate": "2024/07/22",
+    "aliases": ["무시노","임시노","방시노","공시노"]
+  },
+  {
+    "name": "히요리(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "관통",
+    "implDate": "2024/07/29",
+    "aliases": ["수요리"]
+  },
+  {
+    "name": "사오리(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "신비",
+    "implDate": "2024/07/29",
+    "aliases": ["싸오리","디오리"]
+  },
+  {
+    "name": "토모에(치파오)",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "붉은겨울",
+    "attackType": "신비",
+    "implDate": "2024/08/21",
+    "aliases": ["치모에"]
+  },
+  {
+    "name": "마리나(치파오)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "관통",
+    "implDate": "2024/08/21",
+    "aliases": ["치리나"]
+  },
+  {
+    "name": "레이죠",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "산해경",
+    "attackType": "신비",
+    "implDate": "2024/09/25",
+    "aliases": []
+  },
+  {
+    "name": "키사키",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "산해경",
+    "attackType": "진동",
+    "implDate": "2024/09/25",
+    "aliases": []
+  },
+  {
+    "name": "마리(아이돌)",
+    "weapon": "HG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/10/23",
+    "aliases": ["아마리","돌마리"]
+  },
+  {
+    "name": "미네(아이돌)",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/10/23",
+    "aliases": ["아미네","돌미네"]
+  },
+  {
+    "name": "사쿠라코(아이돌)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2024/10/23",
+    "aliases": ["아쿠라코","돌쿠라코"]
+  },
+  {
+    "name": "치아키",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2024/11/20",
+    "aliases": []
+  },
+  {
+    "name": "사츠키",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2024/11/20",
+    "aliases": []
+  },
+  {
+    "name": "유우카(파자마)",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2024/12/24",
+    "aliases": ["파유카"]
+  },
+  {
+    "name": "노아(파자마)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2024/12/24",
+    "aliases": ["파노아"]
+  },
+  {
+    "name": "세이아",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2025/01/20",
+    "aliases": []
+  },
+  {
+    "name": "아스나(교복)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2025/01/20",
+    "aliases": ["교스나"]
+  },
+  {
+    "name": "카린(교복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2025/01/20",
+    "aliases": ["교카린"]
+  },
+  {
+    "name": "리오",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2025/01/27",
+    "aliases": []
+  },
+  {
+    "name": "네루(교복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2025/01/27",
+    "aliases": ["교네루"]
+  },
+  {
+    "name": "마키(캠핑)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2025/02/12",
+    "aliases": ["캠마키"]
+  },
+  {
+    "name": "세나(사복)",
+    "weapon": "GL",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2025/02/26",
+    "aliases": ["사세나"]
+  },
+  {
+    "name": "주리(아르바이트)",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2025/02/26",
+    "aliases": ["아주리","알주리"]
+  },
+  {
+    "name": "이즈미(새해)",
+    "weapon": "MG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2025/03/19",
+    "aliases": ["새즈미","정즈미","뉴즈미"]
+  },
+  {
+    "name": "레이",
+    "weapon": "RL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "진동",
+    "implDate": "2025/03/26",
+    "aliases": []
+  },
+  {
+    "name": "스미레(아르바이트)",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2025/03/26",
+    "aliases": ["아미레","알미레"]
+  },
+  {
+    "name": "사오리(드레스)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "진동",
+    "implDate": "2025/04/09",
+    "aliases": ["드오리"]
+  },
+  {
+    "name": "아오바",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "하이랜더",
+    "attackType": "진동",
+    "implDate": "2025/04/22",
+    "aliases": []
+  },
+  {
+    "name": "노조미",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "하이랜더",
+    "attackType": "진동",
+    "implDate": "2025/04/22",
+    "aliases": []
+  },
+  {
+    "name": "히카리",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "하이랜더",
+    "attackType": "진동",
+    "implDate": "2025/04/22",
+    "aliases": []
+  },
+  {
+    "name": "피나(가이드)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "폭발",
+    "implDate": "2025/05/14",
+    "aliases": ["가피나"]
+  },
+  {
+    "name": "나구사",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2025/05/21",
+    "aliases": []
+  },
+  {
+    "name": "니야",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2025/05/21",
+    "aliases": []
+  },
+  {
+    "name": "나츠(밴드)",
+    "weapon": "SMG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "폭발",
+    "implDate": "2025/06/04",
+    "aliases": ["밴나츠"]
+  },
+  {
+    "name": "유카리(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2025/06/25",
+    "aliases": ["수카리"]
+  },
+  {
+    "name": "렌게(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2025/06/25",
+    "aliases": ["수렌게"]
+  },
+  {
+    "name": "키쿄(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "백귀야행",
+    "attackType": "진동",
+    "implDate": "2025/06/25",
+    "aliases": ["수키쿄"]
+  },
+  {
+    "name": "세이아(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2025/07/22",
+    "aliases": ["수이아"]
+  },
+  {
+    "name": "하스미(수영복)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "관통",
+    "implDate": "2025/07/22",
+    "aliases": ["수스미"]
+  },
+  {
+    "name": "이치카(수영복)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/07/22",
+    "aliases": ["수치카"]
+  },
+  {
+    "name": "미카(수영복)",
+    "weapon": "SMG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/07/30",
+    "aliases": ["수미카"]
+  },
+  {
+    "name": "나기사(수영복)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/07/30",
+    "aliases": ["수기사"]
+  },
+  {
+    "name": "에리",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "와일드헌트",
+    "attackType": "진동",
+    "implDate": "2025/08/20",
+    "aliases": []
+  },
+  {
+    "name": "카노에",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "와일드헌트",
+    "attackType": "신비",
+    "implDate": "2025/08/20",
+    "aliases": []
+  },
+  {
+    "name": "미사키(수영복)",
+    "weapon": "RL",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "폭발",
+    "implDate": "2025/09/03",
+    "aliases": ["수사키"]
+  },
+  {
+    "name": "후유",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "와일드헌트",
+    "attackType": "진동",
+    "implDate": "2025/09/24",
+    "aliases": []
+  },
+  {
+    "name": "미요",
+    "weapon": "SR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "와일드헌트",
+    "attackType": "진동",
+    "implDate": "2025/09/24",
+    "aliases": []
+  },
+  {
+    "name": "리츠",
+    "weapon": "SMG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "와일드헌트",
+    "attackType": "신비",
+    "implDate": "2025/10/08",
+    "aliases": []
+  },
+  {
+    "name": "라브",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/10/22",
+    "aliases": []
+  },
+  {
+    "name": "레이사(매지컬)",
+    "weapon": "SG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/10/22",
+    "aliases": ["매이사"]
+  },
+  {
+    "name": "스즈미(매지컬)",
+    "weapon": "AR",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "트리니티",
+    "attackType": "진동",
+    "implDate": "2025/10/22",
+    "aliases": ["매즈미"]
+  },
+  {
+    "name": "스바루",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "아리우스",
+    "attackType": "신비",
+    "implDate": "2025/11/12",
+    "aliases": []
+  },
+  {
+    "name": "타카네",
+    "weapon": "HG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "붉은겨울",
+    "attackType": "신비",
+    "implDate": "2025/11/19",
+    "aliases": []
+  },
+  {
+    "name": "야쿠모",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "붉은겨울",
+    "attackType": "폭발",
+    "implDate": "2025/11/19",
+    "aliases": []
+  },
+  {
+    "name": "츠쿠요(드레스)",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "백귀야행",
+    "attackType": "관통",
+    "implDate": "2025/12/24",
+    "aliases": ["드쿠요"]
+  },
+  {
+    "name": "미치루(드레스)",
+    "weapon": "SG",
+    "battleClass": [
+      "힐러"
+    ],
+    "school": "백귀야행",
+    "attackType": "폭발",
+    "implDate": "2025/12/24",
+    "aliases": ["드치루"]
+  },
+  {
+    "name": "히마리(무장)",
+    "weapon": "HG",
+    "battleClass": [
+      "T.S"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2026/01/20",
+    "aliases": ["무마리","임마리"]
+  },
+  {
+    "name": "리오(무장)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2026/01/20",
+    "aliases": ["무리오","임리오"]
+  },
+  {
+    "name": "토키(무장)",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "관통",
+    "implDate": "2026/01/20",
+    "aliases": ["무토키","임토키"]
+  },
+  {
+    "name": "케이",
+    "weapon": "RG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2026/01/29",
+    "aliases": []
+  },
+  {
+    "name": "아리스(무장)",
+    "weapon": "AR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2026/01/29",
+    "aliases": ["무리스","임리스","건리스"]
+  },
+  {
+    "name": "에이미(무장)",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2026/02/12",
+    "aliases": ["무이미","임이미"]
+  },
+  {
+    "name": "유즈(무장)",
+    "weapon": "GL",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2026/02/12",
+    "aliases": ["무유즈","임유즈"]
+  },
+  {
+    "name": "코유키(파자마)",
+    "weapon": "MG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "밀레니엄",
+    "attackType": "신비",
+    "implDate": "2026/03/04",
+    "aliases": ["파유키"]
+  },
+  {
+    "name": "코노카",
+    "weapon": "SG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "발키리",
+    "attackType": "신비",
+    "implDate": "2026/03/18",
+    "aliases": []
+  },
+  {
+    "name": "레나",
+    "weapon": "HG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "와일드헌트",
+    "attackType": "폭발",
+    "implDate": "2026/03/18",
+    "aliases": []
+  },
+  {
+    "name": "아카네(교복)",
+    "weapon": "HG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "밀레니엄",
+    "attackType": "폭발",
+    "implDate": "2026/04/01",
+    "aliases": ["교카네"]
+  },
+  {
+    "name": "오토기",
+    "weapon": "SR",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2026/04/21",
+    "aliases": []
+  },
+  {
+    "name": "쿠루미",
+    "weapon": "SMG",
+    "battleClass": [
+      "탱커"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2026/04/21",
+    "aliases": []
+  },
+  {
+    "name": "니코",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "SRT",
+    "attackType": "폭발",
+    "implDate": "2026/04/21",
+    "aliases": []
+  },
+  {
+    "name": "에리카",
+    "weapon": "SG",
+    "battleClass": [
+      "서포터"
+    ],
+    "school": "게헨나",
+    "attackType": "진동",
+    "implDate": "2026/05/20",
+    "aliases": []
+  },
+  {
+    "name": "하루카(드레스)",
+    "weapon": "SG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "폭발",
+    "implDate": "2026/05/27",
+    "aliases": ["드루카"]
+  },
+  {
+    "name": "무츠키(드레스)",
+    "weapon": "MG",
+    "battleClass": [
+      "딜러"
+    ],
+    "school": "게헨나",
+    "attackType": "신비",
+    "implDate": "2026/05/27",
+    "aliases": ["드츠키"]
+  }
+]
