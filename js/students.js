@@ -33,6 +33,9 @@ async function loadStudentsAsync() {
                 dataDict['school'] = schools.findIndex(school => school === oneStudentRaw.school);
                 dataDict['attackType'] = attackTypes.findIndex(attackType => attackType === oneStudentRaw.attackType);
                 dataDict['implementationDate'] = oneStudentRaw.implDate;
+                // ⭐ [수정] 이 줄을 추가해서 별명 데이터도 함께 넣어주어야 합니다!
+                dataDict['aliases'] = oneStudentRaw.aliases || []; 
+
 
                 oneStudentRaw.battleClass.forEach(oneBattleClass => {
                     battleClass += Number(Object.keys(classes).find(k => classes[k] === oneBattleClass));
