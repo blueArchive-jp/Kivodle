@@ -1,5 +1,5 @@
-const studentsUrl = "students.json"; // 내 저장소의 한글 데이터 파일
-const latestUrl = "latest.json";     // 내 저장소의 최신 데이터 체크 파일
+const studentsUrl = "./students.json"; // 내 저장소의 한글 데이터 파일
+const latestUrl = "./latest.json";     // 내 저장소의 최신 데이터 체크 파일
 
 let students;
 
