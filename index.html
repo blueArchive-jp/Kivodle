@@ -1,23 +1,23 @@
 <html>
 
 <head>
-    <title>Kivodle</title>
+    <title>Kivodle (키보들)</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO対策 -->
-    <meta name="description" content="ブルーアーカイブの生徒を当てるWordle風ゲーム">
-    <meta name="keywords" content="ブルーアーカイブ, Blue Archive, Wordle">
+    <!-- SEO -->
+    <meta name="description" content="블루 아카이브 학생을 맞히는 워들 스타일 게임">
+    <meta name="keywords" content="블루 아카이브, 워들, 키보들, Kivodle">
     <meta name="author" content="TaktstockJP">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Kivodle">
-    <meta property="og:description" content="ブルーアーカイブの生徒を当てるWordle風ゲーム">
+    <meta property="og:title" content="Kivodle (키보들)">
+    <meta property="og:description" content="블루 아카이브 학생을 맞히는 워들 스타일 게임">
     <meta property="og:image" content="https://taktstockjp.github.io/Kivodle/resource/logo.png">
     <meta property="og:url" content="https://taktstockjp.github.io/Kivodle/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Taktstock_KV">
-    <meta name="twitter:title" content="Kivodle">
-    <meta name="twitter:description" content="ブルーアーカイブの生徒を当てるWordle風ゲーム">
+    <meta name="twitter:title" content="Kivodle (키보들)">
+    <meta name="twitter:description" content="블루 아카이브 학생을 맞히는 워들 스타일 게임">
     <meta name="twitter:image" content="https://taktstockjp.github.io/Kivodle/resource/logo.png">
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -33,10 +33,10 @@
 <body onload="pageLoad()">
     <nav id="menuBar">
         <ul>
-            <li><a href="" onclick="switchMode(modes.daily); return false;">▽デイリーモード</a></li>
-            <li><a href="" onclick="switchMode(modes.endless); return false;">▽エンドレスモード</a></li>
-            <li><a href="" onclick="switchMode(modes.speedrun); return false;">▽スピードランモード</a></li>
-            <li><a href="" onclick="openModal(); return false;">▽Kivodleについて</a></li>
+            <li><a href="" onclick="switchMode(modes.daily); return false;">▽ 데일리 모드</a></li>
+            <li><a href="" onclick="switchMode(modes.endless); return false;">▽ 엔들리스 모드</a></li>
+            <li><a href="" onclick="switchMode(modes.speedrun); return false;">▽ 스피드런 모드</a></li>
+            <li><a href="" onclick="openModal(); return false;">▽ Kivodle에 관하여</a></li>
         </ul>
     </nav>
     <div id="app">
@@ -55,19 +55,19 @@
                 <select id="selectGuess">
                 </select>
                 <button id="buttonGuess" class="btn btnYellow" onclick="answerProcess($('#selectGuess').val())">
-                    <div class="btnText">解答</div>
+                    <div class="btnText">정답 제출</div>
                 </button>
             </div>
             <div id="checkArea">
                 <div id="checkGrid">
                     <div id="checkGridHeader">
                         <div class="row">
-                            <div class="header studentNameCol">キャラ名</div>
-                            <div class="header weaponTypeCol">武器種</div>
-                            <div class="header classCol">クラス</div>
-                            <div class="header schoolCol">学校</div>
-                            <div class="header attackTypeCol">攻撃属性</div>
-                            <div class="header implDateCol">実装日</div>
+                            <div class="header studentNameCol">이름</div>
+                            <div class="header weaponTypeCol">무기</div>
+                            <div class="header classCol">클래스</div>
+                            <div class="header schoolCol">학원</div>
+                            <div class="header attackTypeCol">공격 타입</div>
+                            <div class="header implDateCol">실장일</div>
                         </div>
                     </div>
                     <div id="checkGridBody">
@@ -80,93 +80,89 @@
         <div id="modalClose" onclick="closeModal();">×</div>
         <div id="modalInner">
             <div>
-                <h2>Kivodleって何？</h2>
+                <h2>Kivodle이란?</h2>
                 <p>
-                    スマホゲーム「<a
-                        href="https://bluearchive.jp/">ブルーアーカイブ</a>」にプレイアブルとして登場する生徒（キャラクター）から１人が正解として選ばれるので、その生徒の特徴から推理しようというゲームです。
+                    모바일 게임 "<a href="https://bluearchive.jp/">블루 아카이브</a>"에 등장하는 특정 학생(캐릭터)을 속성 힌트를 보고 맞히는 게임입니다.
                 </p>
             </div>
             <div>
-                <h2>遊び方</h2>
+                <h2>플레이 방법</h2>
                 <ol>
-                    <li>プルダウンリストから生徒を１人選んで「解答」ボタンを押す。</li>
+                    <li>목록에서 학생을 선택하고 "정답 제출" 버튼을 누릅니다.</li>
                     <li>
-                        選んだ生徒と正解の生徒との間で「武器種」「クラス」「学校」「攻撃属性」「実装日」の比較を行う。<br>
-                        一致している場合は<span class="same">緑背景</span>、そうでない場合は<span class="wrong">赤背景</span>になる。<br>
-                        さらに、実装日は正解の生徒の実装日が選んだ生徒の実装日より前か後かも表示される。<br>
+                        선택한 학생의 "무기 종류", "클래스", "학원", "공격 타입", "실장일"이 정답 학생과 비교됩니다.<br>
+                        일치하면 <span class="same">초록색 배경</span>, 일치하지 않으면 <span class="wrong">빨간색 배경</span>으로 표시됩니다.<br>
+                        실장일의 경우, 정답 학생이 더 먼저 출시되었는지(이전) 나중에 출시되었는지(이후) 화살표로 알려줍니다.<br>
                     </li>
                     <li>
-                        2.の内容をもとに推理して1.を行い、５回以内に正解の生徒を当てられればクリア。<br>
-                        そうでない場合はゲームオーバー。
+                        이 힌트들을 활용하여 5회 이내에 정답 학생을 맞히면 클리어입니다.<br>
+                        기회를 모두 소진하면 게임 오버가 됩니다.
                     </li>
                 </ol>
             </div>
             <div>
-                <h2>モードについて</h2>
-                <h3>デイリーモード</h3>
+                <h2>모드 안내</h2>
+                <h3>데일리 모드</h3>
                 <p>
-                    日替わりで正解が変化します。正解は全ユーザーで共通です。<br>
-                    正解が切り替わるタイミングは日本時間で午前4時（世界標準時で19時）です。<br>
-                    本家Wordleのように結果をシェアできます。<br>
-                    ゲームの途中でブラウザやタブを閉じても、その時に遊んでいたデータはブラウザに保存されます。
+                    정답 학생이 매일 바뀌며, 모든 사용자가 동일한 문제를 풉니다.<br>
+                    정답은 매일 오전 4시(JST)에 초기화됩니다.<br>
+                    원본 워들처럼 결과를 공유할 수 있습니다.<br>
+                    브라우저나 탭을 닫아도 진행 상황이 저장됩니다.
                 </p>
-                <h3>エンドレスモード</h3>
+                <h3>엔들리스 모드</h3>
                 <p>
-                    遊ぶたびに正解が変化し、連続正解数が記録されます。<br>
-                    不正解でゲームオーバーになった時、何回連続で正解できたかをシェアできます。<br>
-                    ゲームの途中でブラウザやタブを閉じても、その時に遊んでいたデータはブラウザに保存されます。
+                    플레이할 때마다 정답이 바뀌며 연승 기록을 측정합니다.<br>
+                    게임 오버 시 몇 연승을 달성했는지 공유할 수 있습니다.<br>
+                    진행 상황은 브라우저에 저장됩니다.
                 </p>
-                <h3>スピードランモード</h3>
+                <h3>스피드런 모드</h3>
                 <p>
-                    最初に決めた期間内に実装された生徒のみが正解候補になります。<br>
-                    （例：最初に「1周年まで」を選択してスタートした場合、サービス開始からワカモが実装されるまでに実装された生徒のみが正解候補になります）<br>
-                    遊ぶたびに正解が変化し、10問正解するまでの時間が期間ごとに記録されます。<br>
-                    不正解してもゲームオーバーになりません。<br>
-                    正解または不正解の判定が出てから「次の問題へ」のボタンを押すまでの間の時間は記録に含まれません。<br>
-                    セルがアニメーションしている間の時間は記録に含まれません。<br>
-                    <span style="color: red;">このモードのみ、ゲームの途中でブラウザやタブを閉じると、その時点での結果は破棄されます。</span>
+                    선택한 특정 기간 내에 출시된 학생들만 정답 후보로 등장합니다.<br>
+                    (예: "1주년까지"를 선택하면 서비스 시작부터 와카모 실장 시점까지의 학생들만 등장)<br>
+                    10명의 학생을 가장 빨리 맞히는 시간을 측정합니다.<br>
+                    이 모드에는 게임 오버가 없습니다.<br>
+                    정답 확인 후 "다음 문제" 버튼을 누르기 전까지의 시간과 애니메이션 재생 시간은 측정에서 제외됩니다.<br>
+                    <span style="color: red;">주의: 이 모드에서만 브라우저나 탭을 닫으면 현재 진행 중인 기록이 삭제됩니다.</span>
                 </p>
             </div>
             <div>
-                <h2>注意事項</h2>
+                <h2>주의 사항</h2>
                 <ul>
-                    <li>更新履歴は<a href="https://github.com/TaktstockJp/Kivodle/blob/main/CHANGELOG.md">こちら</a>を参照してください。
-                    </li>
-                    <li>2025/09/26現在、フユ・ミヨ・リツのデータまで追加済みです。</li>
-                    <li>新しい生徒はゲームで実装された日の翌日からリストに追加・正解として選ばれる対象になります。</li>
-                    <li>コラボ生徒の「学校」は全員「その他」となります。</li>
-                    <li>ホシノ（臨戦）は、タンクでもありアタッカーでもあるとして扱われます。</li>
+                    <li>업데이트 내역은 <a href="https://github.com/TaktstockJp/Kivodle/blob/main/CHANGELOG.md">변경 로그(영문)</a>를 참고하세요.</li>
+                    <li>현재 최신 캐릭터 데이터가 주기적으로 업데이트되고 있습니다.</li>
+                    <li>신규 학생은 게임 내 실장일 다음 날부터 정답 후보에 추가됩니다.</li>
+                    <li>모든 콜라보레이션 학생의 학원은 "기타"로 설정되어 있습니다.</li>
+                    <li>호시노(전투)는 탱커와 어태커 속성을 모두 가진 것으로 취급합니다.</li>
                 </ul>
             </div>
             <div>
-                <h2>不具合報告・要望について</h2>
-                <p style="margin-bottom: 2px;">以下のいずれかにお願いします。</p>
+                <h2>버그 제보 및 건의</h2>
+                <p style="margin-bottom: 2px;">다음 채널을 통해 제작자에게 문의할 수 있습니다 (일본어/영어):</p>
                 <ul>
-                    <li><a href="https://github.com/TaktstockJp/Kivodle/issues">GitHubのIssues</a></li>
-                    <li><a href="https://misskey.io/@Taktstock_mov">作者のmisskey.ioアカウント</a></li>
-                    <li><a href="https://twitter.com/Taktstock_BA">作者のTwitterアカウント</a></li>
+                    <li><a href="https://github.com/TaktstockJp/Kivodle/issues">GitHub Issues</a></li>
+                    <li><a href="https://misskey.io/@Taktstock_mov">제작자 Misskey.io</a></li>
+                    <li><a href="https://twitter.com/Taktstock_BA">제작자 Twitter (X)</a></li>
                 </ul>
             </div>
             <div>
-                <h2>お借りしたものなど</h2>
+                <h2>크레딧</h2>
                 <ul>
-                    <li><a href="https://bluearchive.wikiru.jp/">ブルーアーカイブ（ブルアカ）攻略 Wiki</a>：生徒のデータを参照させていただきました。</li>
-                    <li><a href="https://lab.nulla.top/ba-logo/">BlueArchive-Style Logo
-                            Generator</a>：ロゴを生成して使用させていただきました。</li>
+                    <li><a href="https://bluearchive.wikiru.jp/">블루 아카이브 공략 위키 (일문)</a>: 학생 데이터 참조</li>
+                    <li><a href="https://lab.nulla.top/ba-logo/">블루아카 스타일 로고 제네레이터</a>: 로고 제작 사용</li>
                     <li><a href="https://jquery.com/">jQuery</a></li>
                     <li><a href="https://magicant.github.io/sjavascript/mt.html">Mersenne Twister in JavaScript</a></li>
                     <li><a href="https://tom-select.js.org/">Tom Select</a></li>
                 </ul>
             </div>
             <div>
-                <h2>リポジトリ</h2>
-                <p>リポジトリは<a href="https://github.com/TaktstockJp/Kivodle">こちら</a>。ソースコードはMIT Licenseで提供されています。</p>
+                <h2>저장소</h2>
+                <p>이 게임의 소스 코드는 <a href="https://github.com/TaktstockJp/Kivodle">여기</a>에서 확인할 수 있으며, MIT 라이선스 하에 제공됩니다.</p>
             </div>
             <div>
-                <h2>その他</h2>
+                <h2>면책 조항</h2>
                 <p>
-                    Kivodleは非公式であり、Nexon、Nexon GamesおよびYostarとは一切関係ありません。<br>
-                    当サイトで使用されている情報の所有権および著作権はそれぞれの権利者に帰属します。<br>
+                    Kivodle은 비공식 팬 게임이며 Nexon, Nexon Games, Yostar와 관련이 없습니다.<br>
+                    이 사이트에서 사용된 모든 정보와 에셋의 권리는 각 소유자에게 있습니다.<br>
                 </p>
             </div>
         </div>
