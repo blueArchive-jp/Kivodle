@@ -1,20 +1,20 @@
 const maxTries = 5;
 const speedrunMaxStreak = 10;
 const weapons = Object.freeze(['SG', 'SMG', 'AR', 'GL', 'HG', 'RL', 'SR', 'RG', 'MG', 'MT', 'FT']);
-const classes = Object.freeze({ 0b00001: 'タンク', 0b00010: 'アタッカー', 0b00100: 'ヒーラー', 0b01000: 'サポーター', 0b10000: 'T.S' });
-const schools = Object.freeze(['百鬼夜行', 'レッドウィンター', 'トリニティ', 'ゲヘナ', 'アビドス', 'ミレニアム', 'アリウス', '山海経', 'ヴァルキューレ', 'SRT', 'その他', 'ハイランダー', 'ワイルドハント']);
-const attackTypes = Object.freeze(['爆発', '貫通', '神秘', '振動']);
-const modes = Object.freeze({ daily: 'デイリー', endless: 'エンドレス', speedrun: 'スピードラン' });
+const classes = Object.freeze({ 0b00001: '탱커', 0b00010: '딜러', 0b00100: '힐러', 0b01000: '서포터', 0b10000: 'T.S' });
+const schools = Object.freeze(['백귀야행', '붉은겨울', '트리니티', '게헨나', '아비도스', '밀레니엄', '아리우스', '산해경', '발키리', 'SRT', '기타', '하이랜더', '와일드헌트']);
+const attackTypes = Object.freeze(['폭발', '관통', '신비', '진동']);
+const modes = Object.freeze({ daily: '데일리', endless: '엔들리스', speedrun: '스피드런' });
 const same = 'same';
 const wrong = 'wrong';
-const before = 'より前';
-const after = 'より後';
+const before = '이전';
+const after = '이후';
 const regulations = Object.freeze([
-    { label: '全期間', period: '2099/12/31', key: '' },
-    { label: '1周年まで', period: '2022/01/26', key: '.1st' },
-    { label: '2周年まで', period: '2023/01/24', key: '.2nd' },
-    { label: '3周年まで', period: '2024/01/31', key: '.3rd' },
-    { label: '4周年まで', period: '2025/01/27', key: '.4th' },
+    { label: '전체기간', period: '2099/12/31', key: '' },
+    { label: '1주년까지', period: '2022/01/26', key: '.1st' },
+    { label: '2주년까지', period: '2023/01/24', key: '.2nd' },
+    { label: '3주년까지', period: '2024/01/31', key: '.3rd' },
+    { label: '4주년까지', period: '2025/01/27', key: '.4th' },
 ]);
 
 const keyGeneralVisited = 'Kivodle.General.Visited';
@@ -221,11 +221,11 @@ function answerForLoad() {
 
 // スピードランモードセットアップ時の処理
 function setupSpeedrunMode() {
-    currentRegulation = regulations.find(regulation => regulation.label == '全期間');
+    currentRegulation = regulations.find(regulation => regulation.label == '전체기간');
     corrects = 0;
     setupDom();
     $('#guessArea').addClass('fold');
-    $('#modeNameArea').html('スピードランモード');
+    $('#modeNameArea').html('스피드런모드');
     $('#triesArea').empty();
     $('#infoArea').append($('<div>').attr('id', 'infoButtonArea'));
 
@@ -289,28 +289,28 @@ function startSpeedrun(nextFlg) {
 
 // triesAreaの書き換え
 function setTriesAreaInGame() {
-    $('#triesArea').html(`解答回数： ${tries} ／ ${maxTries}`);
+    $('#triesArea').html(`해답 횟수： ${tries} ／ ${maxTries}`);
 }
 
 function setModeInfoAreaForDaily() {
-    $('#modeNameArea').html('デイリーモード');
-    $('#modeWinStreakArea').html(`連続正解日数：${getLocalStorage(keyDailyWinStreak) || 0}`)
+    $('#modeNameArea').html('데일리 모드');
+    $('#modeWinStreakArea').html(`연속정답일수：${getLocalStorage(keyDailyWinStreak) || 0}`)
 }
 
 function setModeInfoAreaForEndless() {
-    $('#modeNameArea').html(`エンドレスモード<br>現在のスコア：${corrects}`);
-    $('#modeWinStreakArea').html(`ハイスコア：${getLocalStorage(keyEndlessHighScore) || 0}`)
+    $('#modeNameArea').html(`엔들리스 모드<br>현재 스코어：${corrects}`);
+    $('#modeWinStreakArea').html(`하이스코어：${getLocalStorage(keyEndlessHighScore) || 0}`)
 }
 
 function setModeInfoAreaForSpeedrunInGame(millisecond) {
     const totalSecond = Math.floor(millisecond / 1000);
     const formattedTime = `${Math.floor(totalSecond / 60).toString().padStart(2, '0')}:${(totalSecond % 60).toString().padStart(2, '0')}`;
-    $('#modeNameArea').html(`スピードランモード<br>正解数　${corrects} ／ ${speedrunMaxStreak}<br>経過時間　${formattedTime}`);
+    $('#modeNameArea').html(`스피드런 모드<br>정답수　${corrects} ／ ${speedrunMaxStreak}<br>경과시간　${formattedTime}`);
 }
 
 function setWinStreakAreaForSpeedrun() {
     const highScore = getLocalStorage(keySpeedrunHighScore + currentRegulation.key);
-    $('#modeWinStreakArea').html(`ハイスコア（${currentRegulation.label}）：${highScore ? millisecondToEncodedStr(highScore) : '記録なし'}`);
+    $('#modeWinStreakArea').html(`하이스코어（${currentRegulation.label}）：${highScore ? millisecondToEncodedStr(highScore) : '기록없음'}`);
 }
 
 // 解答を設定する
@@ -463,7 +463,7 @@ function prependTableRow(guessed, judgeObj) {
 
 // ゲーム終了時の処理
 function endGame(isHit, loadFlg = false) {
-    const result = `${isHit === same ? '正解！' : '不正解…。'}答えは「${target.studentName}」でした。`;
+    const result = `${isHit === same ? '정답！' : '오답…。'}정답은「${target.studentName}」입니다。`;
 
     $('#guessArea').addClass('fold');
     $('#infoArea').addClass(isHit);
@@ -502,7 +502,7 @@ function endGame(isHit, loadFlg = false) {
             }
             setModeInfoAreaForEndless();
         }
-        insertSingleButton('nextButton', '次の問題へ', function () { setup(true) })
+        insertSingleButton('nextButton', '다음 문제로', function () { setup(true) })
     } else if (currentMode == modes.speedrun) {
         // スピードランモード時の処理
         speedrunSum += Date.now() - speedrunStart - ((tries - 1) * 1000);
@@ -511,7 +511,7 @@ function endGame(isHit, loadFlg = false) {
         if (corrects >= speedrunMaxStreak) {
             // 指定された問題数を解き終わった時
             const encodedTime = millisecondToEncodedStr(speedrunSum);
-            $('#triesArea').append($('<div>').html(`全${speedrunMaxStreak}問正解するのにかかった時間は ${encodedTime} でした。`));
+            $('#triesArea').append($('<div>').html(`전체 ${speedrunMaxStreak}문제 중 맞추는 데 걸리는 시간은 ${encodedTime} 이었습니다。`));
 
             // ハイスコアの置き換えと表示
             const regulatedKey = keySpeedrunHighScore + currentRegulation.key;
@@ -522,15 +522,15 @@ function endGame(isHit, loadFlg = false) {
             insertRetryButton();
         } else {
             // それ以外
-            insertSingleButton('nextButton', '次の問題へ', function () { startSpeedrun(true) })
+            insertSingleButton('nextButton', '다음 문제로', function () { startSpeedrun(true) })
         }
     }
 }
 
 // SNSでシェアする時の文章を作る（デイリーモード用）
 function createShareStrForDaily(isHit) {
-    let shareStr = '今日の #Kivodle は' + String(judges.length) + '回解答して';
-    shareStr += (isHit === same ? '正解しました！' : '不正解でした……。') + '\n\n';
+    let shareStr = '오늘의 #Kivodle 은' + String(judges.length) + '번 도전해서';
+    shareStr += (isHit === same ? '정답이었습니다！' : '오답이었습니다……。') + '\n\n';
 
     let i;
     for (i = judges.length - 1; i >= 0; i--) {
@@ -548,12 +548,12 @@ function createShareStrForDaily(isHit) {
 
 // SNSでシェアする時の文章を作る（エンドレスモード用）
 function createShareStrForEndless() {
-    return `#Kivodle のエンドレスモードで${corrects}問連続で正解しました！\n`;
+    return `#Kivodle 의 엔들리스 모드에서 ${corrects}문제 연속으로 정답을 맞췄습니다！\n`;
 }
 
 // SNSでシェアする時の文章を作る（スピードランモード用）
 function createShareStrForSpeedrun(record) {
-    return `#Kivodle のスピードランモード（${currentRegulation.label}）で${speedrunMaxStreak}問正解するのにかかった時間は ${record} でした！\n`;
+    return `#Kivodle 의 스피드런 모드에서（${currentRegulation.label}）하는데 ${speedrunMaxStreak} 문제 맞추는데 걸린은 시간은 ${record} 입니다！\n`;
 }
 
 // シェアボタンをDOMに挿入する
@@ -570,17 +570,17 @@ function insertShareButton(shareStr) {
 
     const encodedShareStr = encodeURIComponent(shareStr);
     $('#infoButtonArea').append($('<div>').attr('id', 'shareButtonArea'));
-    addButtonDiv('copyButton', 'コピー');
-    addButtonDiv('xButton', 'Xでシェア', `https://x.com/intent/tweet?text=${encodedShareStr}%0A&url=${location.href}`);
-    addButtonDiv('misskeyButton', 'Misskeyでシェア', `https://misskey-hub.net/share/?text=${encodedShareStr}&url=${location.href}&visibility=public&localOnly=0`);
-    addButtonDiv('mastodonButton', 'Mastodonでシェア', `https://donshare.net/share.html?text=${encodedShareStr}&url=${location.href}`);
+    addButtonDiv('copyButton', '복사');
+    addButtonDiv('xButton', 'X로 공유', `https://x.com/intent/tweet?text=${encodedShareStr}%0A&url=${location.href}`);
+    addButtonDiv('misskeyButton', 'Misskey로 공유', `https://misskey-hub.net/share/?text=${encodedShareStr}&url=${location.href}&visibility=public&localOnly=0`);
+    addButtonDiv('mastodonButton', 'Mastodon로 공유', `https://donshare.net/share.html?text=${encodedShareStr}&url=${location.href}`);
 
     $('#copyButton').on('click', function () {
         navigator.clipboard.writeText(`${shareStr}\n${location.href}`).then(
             () => {
-                $('#copyButton').html($('<div>').addClass('btnText').html('コピーしました'));
+                $('#copyButton').html($('<div>').addClass('btnText').html('복사 했습니다.'));
                 setTimeout(function () {
-                    $('#copyButton').html($('<div>').addClass('btnText').html('コピー'));
+                    $('#copyButton').html($('<div>').addClass('btnText').html('복사'));
                 }, 1000);
             });
     });
@@ -591,7 +591,7 @@ function createButton(id, colorClass, text) {
 }
 
 function insertRetryButton() {
-    insertSingleButton('retryButton', '最初から', function () { setup() })
+    insertSingleButton('retryButton', '처음부터', function () { setup() })
 }
 
 function insertSingleButton(id, text, triggered) {
