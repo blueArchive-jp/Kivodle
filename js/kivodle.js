@@ -3,7 +3,8 @@ const speedrunMaxStreak = 10;
 const weapons = Object.freeze(['SG', 'SMG', 'AR', 'GL', 'HG', 'RL', 'SR', 'RG', 'MG', 'MT', 'FT']);
 const classes = Object.freeze({ 0b00001: '탱커', 0b00010: '딜러', 0b00100: '힐러', 0b01000: '서포터', 0b10000: 'T.S' });
 const schools = Object.freeze(['백귀야행', '붉은겨울', '트리니티', '게헨나', '아비도스', '밀레니엄', '아리우스', '산해경', '발키리', 'SRT', '기타', '하이랜더', '와일드헌트']);
-const attackTypes = Object.freeze(['폭발', '관통', '신비', '진동']);
+const attackTypes = Object.freeze(['폭발', '관통', '신비', '진동','분해']);
+const defenseTypes = Object.freeze(['경장갑', '중장갑', '특수장갑', '탄력장갑','복합장갑']);
 const modes = Object.freeze({ daily: '데일리', endless: '엔들리스', speedrun: '스피드런' });
 const same = 'same';
 const wrong = 'wrong';
@@ -42,6 +43,8 @@ let speedrunStart;
 let speedrunSum;
 let intervalId;
 let pulldown;
+let showDefenseType = false; // 공격타입 열 토글 (false: 공격, true: 방어)
+let showKrDate = false;      // 실장일 열 토글 (false: 일본, true: 한국)
 const judges = [];
 const now = getToday();
 
@@ -404,6 +407,9 @@ function answerProcess(guessedName, loadFlg = false) {
 function guess(guessed) {
     const judgeSameOrWrong = (a, b) => a === b ? same : wrong;
     const judgeSameOrWrongBitwise = (a, b) => (a & b) !== 0 ? same : wrong;
+    // 어느 한쪽이라도 데이터가 없으면(null) 비교 불가 -> wrong 취급
+    const judgeNullable = (a, b) => (a != null && b != null) ? judgeSameOrWrong(a, b) : wrong;
+    const guessDateNullable = (a, b) => (a != null && b != null) ? guessDate(a, b) : wrong;
 
     return {
         isHit: judgeSameOrWrong(target.studentName, guessed.studentName),
@@ -411,7 +417,9 @@ function guess(guessed) {
         isSameClass: judgeSameOrWrongBitwise(target.data.class, guessed.data.class),
         isSameSchool: judgeSameOrWrong(target.data.school, guessed.data.school),
         isSameAttackType: judgeSameOrWrong(target.data.attackType, guessed.data.attackType),
-        isSameImplDate: guessDate(target.data.implementationDate, guessed.data.implementationDate)
+        isSameDefenseType: judgeNullable(target.data.defenseType, guessed.data.defenseType),
+        isSameImplDate: guessDate(target.data.implementationDate, guessed.data.implementationDate),
+        isSameKrDate: guessDateNullable(target.data.krDate, guessed.data.krDate)
     };
 }
 
@@ -422,6 +430,21 @@ function prependTableRow(guessed, judgeObj) {
         const cell = $('<div>').addClass('cell');
         cell.append($('<div>').addClass('front'));
         cell.append($('<div>').addClass(['back', 'flipped', isCorrect, ...extraClasses]).html(content));
+
+        return cell;
+    }
+
+    // 헤더 클릭으로 표시를 전환하는 토글 셀 (양쪽 데이터를 data 속성에 보관)
+    // pri/alt = { content, correct }
+    function createToggleCell(pri, alt, extraClasses, useAlt) {
+        const cur = useAlt ? alt : pri;
+        const cell = $('<div>').addClass('cell');
+        cell.append($('<div>').addClass('front'));
+        const back = $('<div>').addClass(['back', 'flipped', cur.correct, ...extraClasses])
+            .html(cur.content)
+            .attr('data-pri-content', pri.content).attr('data-pri-correct', pri.correct)
+            .attr('data-alt-content', alt.content).attr('data-alt-correct', alt.correct);
+        cell.append(back);
 
         return cell;
     }
@@ -445,10 +468,17 @@ function prependTableRow(guessed, judgeObj) {
     $newRow.append(createCell(weapons[guessed.data.weapon], judgeObj.isSameWeapon, ['weaponTypeCol']));
     $newRow.append(createCell(getClassStr(guessed.data.class), judgeObj.isSameClass, ['classCol']));
     $newRow.append(createCell(schools[guessed.data.school], judgeObj.isSameSchool, ['schoolCol']));
-    $newRow.append(createCell(attackTypes[guessed.data.attackType], judgeObj.isSameAttackType, ['attackTypeCol']));
-    const implDateContent = guessed.data.implementationDate +
-        (judgeObj.isSameImplDate === same ? '' : '<br>' + judgeObj.isSameImplDate);
-    $newRow.append(createCell(implDateContent, judgeObj.isSameImplDate === same ? same : wrong, ['implDateCol']));
+    // 공격타입 <-> 방어타입 토글 셀
+    const atkPri = { content: attackTypes[guessed.data.attackType], correct: judgeObj.isSameAttackType };
+    const atkAlt = { content: guessed.data.defenseType != null ? guessed.data.defenseType : '미정', correct: judgeObj.isSameDefenseType };
+    $newRow.append(createToggleCell(atkPri, atkAlt, ['attackTypeCol'], showDefenseType));
+
+    // 실장일(일본) <-> 실장일(한국) 토글 셀
+    const dateContent = (dateStr, judgeResult) =>
+        dateStr == null ? '미정' : (dateStr + (judgeResult === same ? '' : '<br>' + judgeResult));
+    const implPri = { content: dateContent(guessed.data.implementationDate, judgeObj.isSameImplDate), correct: judgeObj.isSameImplDate === same ? same : wrong };
+    const implAlt = { content: dateContent(guessed.data.krDate, judgeObj.isSameKrDate), correct: judgeObj.isSameKrDate === same ? same : wrong };
+    $newRow.append(createToggleCell(implPri, implAlt, ['implDateCol'], showKrDate));
 
     // グリッドの一番上の行に追加
     $('#checkGridBody').prepend($newRow);
@@ -459,6 +489,30 @@ function prependTableRow(guessed, judgeObj) {
             $(val).children().toggleClass('flipped');
         }, currentMode == modes.daily ? 10 + 350 * i : 10);
     });
+}
+
+// 토글 셀 다시 그리기 (이미 표시된 모든 행에 적용)
+function refreshToggleCol(colClass, useAlt) {
+    $('#checkGridBody .back.' + colClass).each(function () {
+        const $b = $(this);
+        const content = useAlt ? $b.attr('data-alt-content') : $b.attr('data-pri-content');
+        const correct = useAlt ? $b.attr('data-alt-correct') : $b.attr('data-pri-correct');
+        $b.html(content).removeClass(same).removeClass(wrong).addClass(correct);
+    });
+}
+
+// 헤더: 공격 타입 <-> 방어 타입
+function toggleAttackDefense() {
+    showDefenseType = !showDefenseType;
+    $('#checkGridHeader .attackTypeCol').text(showDefenseType ? '방어 타입' : '공격 타입');
+    refreshToggleCol('attackTypeCol', showDefenseType);
+}
+
+// 헤더: 실장일(일본) <-> 실장일(한국)
+function toggleImplDate() {
+    showKrDate = !showKrDate;
+    $('#checkGridHeader .implDateCol').text(showKrDate ? '실장일(한국)' : '실장일');
+    refreshToggleCol('implDateCol', showKrDate);
 }
 
 // ゲーム終了時の処理
