@@ -33,8 +33,11 @@ async function loadStudentsAsync() {
                 dataDict['school'] = schools.findIndex(school => school === oneStudentRaw.school);
                 dataDict['attackType'] = attackTypes.findIndex(attackType => attackType === oneStudentRaw.attackType);
                 dataDict['implementationDate'] = oneStudentRaw.implDate;
+                dataDict['krDate'] = oneStudentRaw.krDate || null;          // 한국 실장일 (없으면 null)
+                
+                dataDict['defenseType'] = defenseTypes.findIndex(defenseType => defenseType === oneStudentRaw.defenseType);
                 // ⭐ [수정] 이 줄을 추가해서 별명 데이터도 함께 넣어주어야 합니다!
-                dataDict['aliases'] = oneStudentRaw.aliases || []; 
+                dataDict['aliases'] = oneStudentRaw.aliases || [];
 
 
                 oneStudentRaw.battleClass.forEach(oneBattleClass => {
