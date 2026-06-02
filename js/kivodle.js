@@ -470,7 +470,9 @@ function prependTableRow(guessed, judgeObj) {
     $newRow.append(createCell(schools[guessed.data.school], judgeObj.isSameSchool, ['schoolCol']));
     // 공격타입 <-> 방어타입 토글 셀
     const atkPri = { content: attackTypes[guessed.data.attackType], correct: judgeObj.isSameAttackType };
-    const atkAlt = { content: guessed.data.defenseType != null ? guessed.data.defenseType : '미정', correct: judgeObj.isSameDefenseType };
+    const defIdx = guessed.data.defenseType;
+    const atkAlt = { content: (defIdx != null && defIdx >= 0) ? defenseTypes[defIdx] : '미정', correct:
+    judgeObj.isSameDefenseType };
     $newRow.append(createToggleCell(atkPri, atkAlt, ['attackTypeCol'], showDefenseType));
 
     // 실장일(일본) <-> 실장일(한국) 토글 셀
