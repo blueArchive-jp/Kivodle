@@ -219,6 +219,16 @@ body {
     font-weight: bold;
 }
 
+.toggleHeader {
+    cursor: pointer;
+    text-decoration: underline dotted;
+    user-select: none;
+}
+
+.toggleHeader:hover {
+    background-color: #7fe6ee;
+}
+
 .cell {
     position: relative;
     width: 100%;
