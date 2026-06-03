@@ -67,8 +67,12 @@ async function pageLoad() {
         valueField: 'value',
         labelField: 'text',
         searchField: ['text', 'aliases'],
-        // 수정 1: 반환된 점수($score)를 기준으로 내림차순(desc) 정렬
-        sortField: [{ field: '$score', direction: 'desc' }],  
+        
+        // 수정: 검색 일치 점수 1순위, 점수가 같을 경우(또는 검색어가 없을 경우) 이름(text) 기준 가나다순 2순위 정렬
+        sortField: [
+            { field: '$score', direction: 'desc' },
+            { field: 'text', direction: 'asc' }
+        ],
         score: function (search) {
             return function (item) {
                 const term = search.toLowerCase(); // 검색어를 소문자로 (영어 검색 대비)
